@@ -1,5 +1,4 @@
-# === Load .env file ===
-$envFilePath = "$PSScriptRoot\.env"
+$envFilePath = "\.env"
 
 if (Test-Path $envFilePath) {
     Get-Content $envFilePath | ForEach-Object {
